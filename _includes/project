@@ -1,0 +1,9 @@
+<div id="github-projects"></div>
+
+<!-- Javascript to load and display repos from GitHub -->
+<script type="text/javascript">
+    $(function() {
+        $("#github-projects").loadRepositories("JengChen");
+    });
+</script>
+<!-- End GitHub repo code -->
