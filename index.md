@@ -12,10 +12,10 @@ Over time, I will continue to add my future open source projects and blog about 
 ##Links
 Other sites and organizations of interest:
 
-  - An Online network storage applications:[DropBox](http://db.tt/RycPvMhJ)
-  - opensource projects: [Google code](https://code.google.com)
-  - free opensource software: [sourceforge](http://sourceforge.net/)
-  - IBM Products and Technology: [IBM developerWorks](https://www.ibm.com/developerworks/cn/)
-
+* An Online network storage applications:[DropBox](http://db.tt/RycPvMhJ)
+* Opensource projects: [Google code](https://code.google.com)
+* Free opensource software: [sourceforge](http://sourceforge.net/)
+* IBM Products and Technology: [IBM developerWorks](https://www.ibm.com/developerworks/cn/)   
+#      
 ## Recent Blog Posts
 {% include post %}
