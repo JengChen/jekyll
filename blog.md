@@ -7,5 +7,5 @@ tagline:
 ##Blog Posts
 
 {% include feed %}
-{% include post %}
+{% include posts %}
 
