@@ -1,6 +1,6 @@
 ---
 layout: default
-title: JengChen's website
+title: Home
 tagline: 
 ---
 
