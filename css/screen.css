@@ -84,11 +84,12 @@ ul.posts {
   width: 50em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
+  color: #333333;
 }
 
 .title {
   color: #a00;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 2em;
 }
 
@@ -163,8 +164,15 @@ ul.posts {
 #post {
 
 }
-
+  #post *{
+  	font-weight: normal;
+  	color: #333333;
+    font-size: 95%;
+  }
   /* standard */
+  #post strong{
+    font-size: 120%;
+  }
 
   #post pre {
     border: 1px solid #ddd;
@@ -175,13 +183,15 @@ ul.posts {
   #post ul,
   #post ol {
     margin-left: 1.35em;
+  	color: #333333;
   }
 
   #post code {
     border: 1px solid #ddd;
     background-color: #eef;
-    font-size: 85%;
+    font-size: 80%;
     padding: 0 .2em;
+	color: #8b2323
   }
 
     #post pre code {
