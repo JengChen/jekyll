@@ -2,5 +2,5 @@ markdown: rdiscount
 pygments: true
 
 title: JengChen's WebSite
-url: http://chenfjm.github.com
-destination: chenfjm.github.com
+url: http://chenfjm.github.io
+destination: chenfjm.github.io
