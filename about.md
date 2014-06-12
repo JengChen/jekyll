@@ -6,7 +6,7 @@ tagline:
 
 ##About Me
 
-My Chinese name is [陈成](http://jengchen.github.io/contact.html) and English name is [JengChen](http://jengchen.github.io/contact.html), 24 years old.Hometown in Yan'an City, Shaanxi Province,China
+My Chinese name is [陈成](http://chenfjm.github.io/contact.html) and English name is [JengChen](http://chenfjm.github.io/contact.html), 24 years old.Hometown in Yan'an City, Shaanxi Province,China
 I am graduated from [Xi'An University of Technology](http://www.xaut.edu.cn),Computer Science and Technology ,in Xi'An. Now ,I am working at ZLG in GuangZhou.
 You can get my shared files on [DropBox](https://www.dropbox.com/sh/13r1hdutv4uqz45/9k8klaihuH).
 

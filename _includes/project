@@ -3,7 +3,7 @@
 <!-- Javascript to load and display repos from GitHub -->
 <script type="text/javascript">
     $(function() {
-        $("#github-projects").loadRepositories("JengChen");
+        $("#github-projects").loadRepositories("chenfjm");
     });
 </script>
 <!-- End GitHub repo code -->
