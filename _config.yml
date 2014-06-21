@@ -12,12 +12,12 @@ owner:
 #  bio:
   email:          chenfjm@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:
-  facebook:
-  github: chenfjm
-  linkedin:
-  instagram:
+  twitter:          jengchen
+  facebook:         chenfjm
+  github:           chenfjm
+  linkedin:         chenfjm
+  instagram:        chenfjm
   lastfm:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+  google_plus:      chenfjm

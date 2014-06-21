@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: category
 title: Blog
 tagline: 
 ---
- 
+
 ##Blog Posts
 
 {% include feed %}
-{% include posts %}
+{% include post %}
 

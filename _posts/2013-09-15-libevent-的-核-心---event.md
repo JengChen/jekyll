@@ -1,8 +1,7 @@
 ---
 layout: post
 title: libevent核心 - event
-tags:
-keywords:
+category: 网络
 description:
 ---
 **event结构体**   

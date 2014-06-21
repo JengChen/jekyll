@@ -1,9 +1,7 @@
 ---
 layout: post
 title: 利用Jekyll搭建个人网站
-published:  
-tags:  website github jekyll
-keywords: website github jekyll
+category: 其他
 description: Jekyll是一个静态网站生成器，用ruby编写而成，结合了markdown、Liquid等技术，简化了静态网站的构建过程，配合disqus等技术，可以方便的生成具有简单动态功能的网站
 ---
 ##安装

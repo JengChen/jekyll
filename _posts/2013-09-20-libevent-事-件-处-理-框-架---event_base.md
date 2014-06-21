@@ -1,8 +1,7 @@
 ---
 layout: post
 title: libevent事件处理框架－event_base
-tags:
-keywords:
+category: 网络
 description:
 ---
 **event_base结构体**  
