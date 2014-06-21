@@ -3,4 +3,21 @@ pygments: true
 
 title: JengChen's WebSite
 url: http://chenfjm.github.io
-destination: chenfjm.github.io
+permalink: /categories/:categories/:title
+
+# Owner/author information
+owner:
+  name:           JengChen
+  avatar:         index.png
+#  bio:
+  email:          chenfjm@gmail.com
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:
+  facebook:
+  github: chenfjm
+  linkedin:
+  instagram:
+  lastfm:
+  tumblr:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:
