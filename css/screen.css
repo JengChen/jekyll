@@ -30,10 +30,6 @@ body {
 		  margin-bottom: 1em;
 	  }
 
-	  p {
-		  margin: 1em 0;
-	  }
-
 	  a:hover {
 		  color: black;
 	  }
@@ -108,7 +104,7 @@ body {
 	  .site .title a.extra {
 		  color: #aaa;
 		  text-decoration: none;
-		  margin-left: 3em;
+		  margin-right: 3em;
 	  }
 
 	  .site .title a.extra:hover {
