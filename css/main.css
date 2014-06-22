@@ -79,6 +79,10 @@ body {
 		  color: #333333;
 	  }
 
+	  .site p{
+	  		margin:1em 0;
+	  }
+
 	  .site a{
 	  	color: #00a;
 	  }

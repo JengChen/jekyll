@@ -1,7 +1,7 @@
 ---
 layout: post
 title: protobuf语言指南
-category: c++
+category: 工具
 description:
 ---
 **定义消息类型**  

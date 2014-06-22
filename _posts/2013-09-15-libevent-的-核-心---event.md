@@ -9,7 +9,6 @@ description:
 Libevent是基于事件驱动（event-driven）的，从名字也可以看到event是整个库的核心。event就是Reactor框架中的事件处理程序组件；它提供了函数接口，供Reactor在事件发生时调用，以执行相应的事件处理，通常它会绑定一个有效的句柄。  
 首先给出event结构体的定义，它位于event_struct.h文件中：  
 
-
 	struct event {
 	struct event_callback ev_evcallback;
 
