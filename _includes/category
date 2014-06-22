@@ -1,9 +1,0 @@
-<h4>category</h4>
-<ul>
-{% for category in site.categories %}
-<p style="text-indent:0;margin-top:0.5em">
-<a href="/categories/{{ category | first }}" title="view all
-posts">{{ category | first }} ({{ category | last | size }})</a>
-</p>
-{% endfor %}
-</ul>
