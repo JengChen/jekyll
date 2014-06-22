@@ -16,9 +16,9 @@
   
    <link rel="icon" href=/images/index.png />
 
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/css/ionicons.css" type="text/css"/>
+   <link rel="stylesheet" href="/css/syntax.css" />
+   <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/ionicons.css" >
 
    <!-- Google Analytics Code -->
    <script type="text/javascript">
@@ -78,16 +78,6 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 
 	<h1>libevent工具集</h1>
 <p class="meta">27 Sep 2013</p>
-<div class="social">
-  <div class="share">
-    <div class="g-plusone" data-size="medium"></div>
-  </div>
-  <div class="share">
-    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E5%B7%A5-%E5%85%B7-%E9%9B%86&text=libevent工具集&hashtags=&via=JengChen&count=horizontal" style="width:115px; height:21px;"></iframe>
-  </div>
-</div>
-<br />
-<br />
 <div id="post">
 <p><strong>基本类型</strong></p>
 
@@ -246,7 +236,6 @@ void evutil_secure_rng_add_bytes(const char *dat, size_t datlen);
 <p>不需要手动初始化安全随机数发生器，但是如果要确认已经成功初始化，可以调用evutil_secure_rng_init()。函数会播种RNG（如果没有播种过），并在成功时返回0。函数返回-1则表示libevent无法在操作系统中找到合适的熵源（sourceofentropy），如果不自己初始化RNG，就无法安全使用RNG了。</p>
 
 </div>
-  <wb:share-button type="button" size="middle" relateuid="2418291384" ></wb:share-button>
    <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

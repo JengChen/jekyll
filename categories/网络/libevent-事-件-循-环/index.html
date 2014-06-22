@@ -16,9 +16,9 @@
   
    <link rel="icon" href=/images/index.png />
 
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/css/ionicons.css" type="text/css"/>
+   <link rel="stylesheet" href="/css/syntax.css" />
+   <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/ionicons.css" >
 
    <!-- Google Analytics Code -->
    <script type="text/javascript">
@@ -78,16 +78,6 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 
 	<h1>libevent事件循环</h1>
 <p class="meta">23 Sep 2013</p>
-<div class="social">
-  <div class="share">
-    <div class="g-plusone" data-size="medium"></div>
-  </div>
-  <div class="share">
-    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E4%BA%8B-%E4%BB%B6-%E5%BE%AA-%E7%8E%AF&text=libevent事件循环&hashtags=&via=JengChen&count=horizontal" style="width:115px; height:21px;"></iframe>
-  </div>
-</div>
-<br />
-<br />
 <div id="post">
 <p>libevent事件处理的中心部分——事件主循环，根据系统提供的事件多路分发机制执行事件循环，对已注册的就绪事件，调用注册事件的回调函数来处理事件。</p>
 
@@ -171,7 +161,6 @@ int sh_old_max;
 <p>evsignal_info的初始化包括，创建socket pair，设置ev_signal事件（但并没有注册，而是等到有信号注册时才检查并注册），并将所有标记置零，初始化信号的注册事件链表指针等。</p>
 
 </div>
-  <wb:share-button type="button" size="middle" relateuid="2418291384" ></wb:share-button>
    <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
