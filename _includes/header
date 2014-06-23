@@ -19,38 +19,12 @@
    {% endif %}
   
    <link rel="icon" href=/images/index.png />
-
-   <link rel="stylesheet" href="/css/syntax.css" />
    <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection">
    <link rel="stylesheet" href="/css/ionicons.css" >
 
-   <!-- Google Analytics Code -->
-   <script type="text/javascript">
-
-     var _gaq = _gaq || [];
-     _gaq.push(['_setAccount', 'UA-38185696-1']);
-     _gaq.push(['_trackPageview']);
-
-     (function() {
-       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-
-   </script>
-   <!-- End Google Analytics Code -->
-
-   <!-- Javascript needed by projects.html -->
    <script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
    <script type="text/javascript" src="/javascripts/jquery.github.js"></script>
+   <script type="text/javascript" src="/javascripts/prettify.js"></script>
 
-   <!-- Google+ Plus One Button, asynchronous code -->
-   <script type="text/javascript">
-   (function() {
-	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-	po.src = 'https://apis.google.com/js/plusone.js';
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-	})();
-</script>
-<!-- End Google+ Plus One Button code -->
 </head>
