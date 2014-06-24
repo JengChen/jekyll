@@ -18,10 +18,12 @@
 <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/css/ionicons.css" >
+<link rel="stylesheet" href="/css/lifestream.css" >
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="/javascripts/jquery.github.js"></script>
 <script type="text/javascript" src="/javascripts/prettify.js"></script>
+<script src="/javascripts/jquery.lifestream.min.js"></script>
 </head>
 
 <body>
@@ -85,7 +87,13 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 <div id="post">
 <p><strong>event_base结构体</strong></p>
 
+
+
+
 <p>在libevent中event_base就是Reactor的框架组件，event_base结构体定义如下，它位于event-internal.h文件中。</p>
+
+
+
 
 <pre><code>struct event_base {
 const struct eventop *evsel;
@@ -141,9 +149,18 @@ LIST_HEAD(once_event_list, event_once) once_events;
 };  
 </code></pre>
 
+
+
+
 <p><strong>创建event_base</strong></p>
 
+
+
+
 <p>使用libevent函数之前需要分配一个或者多个event_base结构体。每个event_base结构体持有一个事件集合，可以检测以确定哪个事件是激活的。如果设置event_base使用锁，则可以安全地在多个线程中访问它。然而，其事件循环只能运行在一个线程中。如果需要用多个线程检测IO，则需要为每个线程使用一个event_base。每个event_base都有一种用于检测哪种事件已经就绪的“方法”，或者说后端。可以识别的方法有：</p>
+
+
+
 
 <ul>
 <li>select</li>
@@ -156,22 +173,42 @@ LIST_HEAD(once_event_list, event_once) once_events;
 </ul>
 
 
+
+
 <p>用户可以用环境变量禁止某些特定的后端。比如说，要禁止kqueue后端，可以设置EVENT_NOKQUEUE环境变量。如果要用编程的方法禁止后端，请看下面关于event_config_avoid_method（）的说明。<br/>
 event_base_new（）函数分配并且返回一个新的具有默认设置的event_base。函数会检测环境变量，返回一个到event_base的指针。如果发生错误，则返回NULL。选择各种方法时，函数会选择OS支持的最快方法。</p>
+
+
+
 
 <pre><code>struct event_base *event_base_new(void);  
 </code></pre>
 
+
+
+
 <p>要对取得什么类型的event_base有更多的控制，就需要使用event_config。event_config是一个容纳event_base配置信息的不透明结构体。需要event_base时，将event_config传递给event_base_new_with_config（）。</p>
+
+
+
 
 <pre><code>struct event_config *event_config_new(void);
 struct event_base *event_base_new_with_config(const struct event_config *cfg);
 void event_config_free(struct event_config *cfg);  
 </code></pre>
 
+
+
+
 <p>要使用这些函数分配event_base，先调用event_config_new（）分配一个event_config。然后，对event_config调用其它函数，设置所需要的event_base特征。最后，调用event_base_new_with_config（）获取新的event_base。完成工作后，使用event_config_free（）释放event_config。</p>
 
+
+
+
 <p><strong>后端设置</strong></p>
+
+
+
 
 <pre><code>int event_config_avoid_method(struct event_config *cfg, const char *method);
 enum event_method_feature {
@@ -194,9 +231,18 @@ int event_config_set_flag(struct event_config *cfg,
     enum event_base_config_flag flag);  
 </code></pre>
 
+
+
+
 <p>调用event_config_avoid_method（）可以通过名字让libevent避免使用特定的可用后端。调用event_config_require_feature（）让libevent不使用不能提供所有指定特征的后端。调用event_config_set_flag（）让libevent在创建event_base时设置一个或者多个将在下面介绍的运行时标志。</p>
 
+
+
+
 <p>event_config_require_features（）可识别的特征值有：</p>
+
+
+
 
 <ul>
 <li>EV_FEATURE_ET：要求支持边沿触发的后端</li>
@@ -205,7 +251,12 @@ int event_config_set_flag(struct event_config *cfg,
 </ul>
 
 
+
+
 <p>event_config_set_flag（）可识别的选项值有：</p>
+
+
+
 
 <ul>
 <li>EVENT_BASE_FLAG_NOLOCK：不要为event_base分配锁。设置这个选项可以为event_base节省一点用于锁定和解锁的时间，但是让在多个线程中访问event_base成为不安全的。</li>
@@ -216,25 +267,52 @@ int event_config_set_flag(struct event_config *cfg,
 </ul>
 
 
+
+
 <p>上述操作event_config的函数都在成功时返回0，失败时返回-1</p>
+
+
+
 
 <p><strong>释放event_base</strong></p>
 
+
+
+
 <p>使用完event_base之后，使用event_base_free（）进行释放。</p>
+
+
+
 
 <pre><code>void event_base_free(struct event_base *base);  
 </code></pre>
 
+
+
+
 <p>注意：这个函数不会释放当前与event_base关联的任何事件，或者关闭他们的套接字，或者释放任何指针。</p>
+
+
+
 
 <p><strong>设置event_base的优先级</strong></p>
 
+
+
+
 <p>libevent支持为事件设置多个优先级。然而，event_base默认只支持单个优先级。可以调用event_base_priority_init（）设置event_base的优先级数目。</p>
+
+
+
 
 <pre><code>int event_base_priority_init(struct event_base *base, int n_priorities);  
 </code></pre>
 
+
+
+
 <p>成功时这个函数返回0，失败时返回-1。base是要修改的event_base，n_priorities是要支持的优先级数目，这个数目至少是1。每个新的事件可用的优先级将从0（最高）到n_priorities-1（最低）。常量EVENT_MAX_PRIORITIES表示n_priorities的上限。调用这个函数时为n_priorities给出更大的值是错误的。</p>
+
 
 </div>
    <div id="disqus_thread"></div>
@@ -258,7 +336,11 @@ int event_config_set_flag(struct event_config *cfg,
     
 
 	<div class="footer">
-<div class="rss">
+<div style="width:55em;height:3px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+<div class=contact>
+<p>©2013 JengChen Tel:18520222024 </p>
+</div>
+<div class="share">
 <p>
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">

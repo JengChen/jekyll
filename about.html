@@ -18,10 +18,12 @@
 <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/css/ionicons.css" >
+<link rel="stylesheet" href="/css/lifestream.css" >
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="/javascripts/jquery.github.js"></script>
 <script type="text/javascript" src="/javascripts/prettify.js"></script>
+<script src="/javascripts/jquery.lifestream.min.js"></script>
 </head>
 
 <body>
@@ -77,10 +79,101 @@ You can get my shared files on <a href="https://www.dropbox.com/sh/13r1hdutv4uqz
 <!-- End of Flickr Badge -->
 
 
+<h2>Life Stream</h2>
+
+<div id="lifestream">&nbsp;</div>
+
+
+<script>
+(function(){
+ list = [
+ {
+service: 'googleplus',
+user: '104464021526429289930',
+key: 'AIzaSyC1N3B48qr0isTO4EJQhilKIiS2RWglrGI'
+},
+{
+service: 'twitter',
+user: 'jengchen'
+},
+{
+service: 'facebook_page',
+user: '100003529174667'
+},
+{
+service: 'flickr',
+<!-- user: '92981161@N05'-->
+},
+{
+service: 'github',
+         user: '',
+},
+{
+service: 'linkedin',
+         user: '238816614'
+},
+{
+service: 'blogger',
+         user: ''
+},
+{
+service: 'lastfm',
+         user: ''
+},
+{
+service: 'reddit',
+         user: 'JengChen'
+},
+{
+service: 'rss',
+         user: ''
+},
+{
+service: 'stackoverflow',
+         user: ''
+},
+{
+service: 'tumblr',
+         user: ''
+},
+{
+service: 'vimeo',
+         user: ''
+},
+{
+service: 'wikipedia',
+         user: '',
+         language: 'en'
+},
+{
+service: 'wordpress',
+         user: ''
+},
+{
+service: 'youtube',
+         user: 'chenfjm'
+},
+    ];
+
+
+$("#lifestream").lifestream({
+limit: 100,
+list: list,
+feedloaded: function(){
+}
+});
+})();
+</script>
+
+
 
 
 	<div class="footer">
-<div class="rss">
+<div style="width:55em;height:3px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+<div class=contact>
+<p>©2013 JengChen Tel:18520222024 </p>
+</div>
+<div class="share">
 <p>
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">

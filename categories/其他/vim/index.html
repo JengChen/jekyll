@@ -18,10 +18,12 @@
 <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/css/ionicons.css" >
+<link rel="stylesheet" href="/css/lifestream.css" >
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="/javascripts/jquery.github.js"></script>
 <script type="text/javascript" src="/javascripts/prettify.js"></script>
+<script src="/javascripts/jquery.lifestream.min.js"></script>
 </head>
 
 <body>
@@ -85,12 +87,24 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 <div id="post">
 <p><strong>插件安装</strong></p>
 
+
+
+
 <p>下载vundle:</p>
+
+
+
 
 <pre><code>$ git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 </code></pre>
 
+
+
+
 <p>在.vimrc 中添加bundle的配置</p>
+
+
+
 
 <pre><code>set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -118,9 +132,18 @@ Plugin 'file://~/.vim/bundle/taglist'
 filetype plugin indent on 
 </code></pre>
 
+
+
+
 <p>在Vim中执行<code>：PluginInstall</code>,上述插件自动安装到<code>/.vim/bundle</code>目录下。</p>
 
+
+
+
 <p><strong>插件配置</strong></p>
+
+
+
 
 <pre><code>"colorscheme github                                                     
 colorscheme Monokai-Refined
@@ -158,20 +181,44 @@ runtime macros/matchit.vim
 set hlsearch    
 </code></pre>
 
+
+
+
 <p>更详细的配置信息请参考<a href="https://github.com/JengChen/VimPlugins">.vimrc</a></p>
 
+
+
+
 <p><strong>Vundle</strong></p>
+
+
+
 
 <p>相比sublime text2等现代编辑器，Vim缺乏默认的插件管理器，所有插件的文件都散布在~/.vim下的几个文件夹中，配置vim的过程, 就是在网上不停的搜插件，拷贝到~/.vim下，发现更新，要重新下载重新拷贝，想要删除某个不需要插件，更是要小心翼翼的不要删错。配置出顺手的Vim, 需要极大的耐心和运气。
 当然vim社区的活力是不容怀疑的，没有枪没有炮大神们自己造。以前使用过tpope的pathogen，使用git submodule和pathogen, 管理插件已经大大简化。而今天介绍的vundle, 更是把git操作整合进去，用户需要做的只是去Github上找到自己想要的插件的名字，安装，更新和卸载都可有vundle来完成了。虽然去发现一个好的插件仍然是一个上下求索的过程，但是用户已经可以从安装配置的繁琐过程解脱了。</p>
 
+
+
+
 <p><strong>nerdtree</strong></p>
+
+
+
 
 <p>这个是比系统原代的netrw更好用的file explorer，可以以树形显示文件结构，但和winmanager有冲突，无法像netrw一样和谐地整合到winmanager中。在nerdtree的窗口中按？可显示快捷键操作。</p>
 
+
+
+
 <p><strong>nerdcommenter</strong></p>
 
+
+
+
 <p>快速添加注释的插件，使用方法如下：</p>
+
+
+
 
 <pre><code>&lt;Leader&gt;cc      最基本注释
 &lt;Leader&gt;cu      撤销注释
@@ -179,17 +226,38 @@ set hlsearch
 &lt;Leader&gt;cs      性感的注释方式   
 </code></pre>
 
+
+
+
 <p><strong>Ultisnips</strong></p>
+
+
+
 
 <p>需要python的支持，很强大的代码补全插件，大大提高编写代码的速度。可以自己定义模板，在该插件目录下的UltiSnips目录中有各种语言的补全模板。默认使用tab键补全.</p>
 
+
+
+
 <p><strong>Syntastic</strong></p>
+
+
+
 
 <p>语法检查的插件，可以查看当前代码的错误，无需等到编译出错后再来修改。 :Errors打开错误列表，:lnext和lpre切换下一个和前一个错误。</p>
 
+
+
+
 <p><strong>YouCompleteMe</strong></p>
 
+
+
+
 <p>公认的补全神器，只不过属于编译性插件，稍微麻烦一些，而且体积确实大了一些，编译完后这个插件就达到了七八十MB大小。不过补全效果最好，支持C/C++/Objective-C/Objective-C++的补全，还支持基于Jedi的Python补全和基于OmniSharp的C#补全，号称安了这个插件就不需要下面四个了:</p>
+
+
+
 
 <ul>
 <li>clang complete</li>
@@ -199,23 +267,46 @@ set hlsearch
 </ul>
 
 
+
+
 <p>而且这插件和Syntastic和ultisnips的配合也都很好。而且它支持模糊匹配功能，你只需要输入想要输入的单词的子序列即可匹配到，如你想匹配的名为printf，只需输入ptf即可。而且它还支持从一个变量跳转到它的声明或定义处的功能，都是很好用的，所以费了一番功夫编译好它还是值得的。</p>
+
+
+
 
 <p>这个插件是需要build-essential、camke、clang、python-dev等很多支持的，还需要vim高于7.3.584。ubuntu用户需要重新编译安装更高版本的vim了。</p>
 
+
+
+
 <p>安装依赖库</p>
+
+
+
 
 <pre><code>sudo apt-get install ctags cscope libncurses5-dev libgnome2-dev libgnomeui-dev \
                      libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
                      libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev ruby-dev mercurial   
 </code></pre>
 
+
+
+
 <p>删除vim</p>
+
+
+
 
 <pre><code>sudo apt-get remove vim vim-runtime gvim vim-tiny vim-common vim-gui-common  
 </code></pre>
 
+
+
+
 <p>编译安装vim</p>
+
+
+
 
 <pre><code>cd ~
 hg clone https://code.google.com/p/vim/
@@ -232,7 +323,13 @@ cd vim
                             sudo make install  
 </code></pre>
 
+
+
+
 <p>设置vim为默认编辑器</p>
+
+
+
 
 <pre><code>sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 1
 sudo update-alternatives --set editor /usr/bin/vim
@@ -240,32 +337,57 @@ sudo update-alternatives --install /usr/bin/vi vi /usr/bin/vim 1
 sudo update-alternatives --set vi /usr/bin/vim   
 </code></pre>
 
+
+
+
 <p>编译YCM</p>
+
+
+
 
 <pre><code>sudo apt-get install build-essential cmake python-dev clang llvm
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer [--omnisharp-completer]   
 </code></pre>
 
+
+
+
 <p>如果自带编译不能通过请尝试手动编译方法，编译根据系统clang和llvm的情况有所不同，分为几种情况。</p>
+
+
+
 
 <ul>
 <li>clang、llvm等级高于3.3</li>
 </ul>
 
 
+
+
 <p>这种情况最简单，执行YouCompleteMe中自带的安装脚本即可。</p>
+
+
+
 
 <pre><code>cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer [--omnisharp-completer]   
 </code></pre>
+
+
+
 
 <ul>
 <li>系统的clang等级高于3.3，手动编译</li>
 </ul>
 
 
+
+
 <p>在YouCompleteMe目录下执行：</p>
+
+
+
 
 <pre><code>mkdir ~/ycm_build  
 cd ~/ycm_build  
@@ -275,12 +397,20 @@ make ycm_support_libs
 make  
 </code></pre>
 
+
+
+
 <ul>
 <li>下载对应系统版本的clang+llvm的Pre-build Binaries包</li>
 </ul>
 
 
+
+
 <p>在YouCompleteMe目录下执行：</p>
+
+
+
 
 <pre><code>mkdir ~/ycm_tmp  
 tar -zxvf clang+llvm-3.4.tar.gz -C ~/ycm_tmp/llvm  
@@ -294,12 +424,22 @@ make ycm_support_libs
 make    
 </code></pre>
 
+
+
+
 <p>安装完YCM后，如果状态行总是出现错误信息，在.vimrc中加入以下配置：</p>
+
+
+
 
 <pre><code>let g:ycm_show_diagnostics_ui = 0               " 关闭ycm的syntastic    
 </code></pre>
 
+
+
+
 <p>至此，Vim插件配置就完成了，你已经有了一个比IDE更加强大的编码工具了。</p>
+
 
 </div>
    <div id="disqus_thread"></div>
@@ -323,7 +463,11 @@ make
     
 
 	<div class="footer">
-<div class="rss">
+<div style="width:55em;height:3px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+<div class=contact>
+<p>©2013 JengChen Tel:18520222024 </p>
+</div>
+<div class="share">
 <p>
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">

@@ -18,10 +18,12 @@
 <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/css/ionicons.css" >
+<link rel="stylesheet" href="/css/lifestream.css" >
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="/javascripts/jquery.github.js"></script>
 <script type="text/javascript" src="/javascripts/prettify.js"></script>
+<script src="/javascripts/jquery.lifestream.min.js"></script>
 </head>
 
 <body>
@@ -85,6 +87,9 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 <div id="post">
 <p><strong>Unix哲学基础</strong></p>
 
+
+
+
 <p>模块原则：使用简洁的接口拼合简单的部件。<br/>
 清晰原则：清晰胜于技巧。<br/>
 组合原则：设计时考虑拼接组合。<br/>
@@ -103,7 +108,13 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 多样原则：决不相信所谓“不二法门”的断言。<br/>
 扩展原则：设计着眼未来，未来总比预想来得快。</p>
 
+
+
+
 <p><strong>应用Unix哲学</strong></p>
+
+
+
 
 <ul>
 <li>只要可行，一切都应该做成与来源和目标无关的过滤器。</li>
@@ -118,10 +129,18 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 </ul>
 
 
+
+
 <p><strong>模块性：保持清晰，保持简洁</strong></p>
+
+
+
 
 <p>最佳模块大小：逻辑行为200到400，物理行为400到800。<br/>
 模块式编码：</p>
+
+
+
 
 <ul>
 <li>有多少全局变量？全局变量很容易使各模块轻率、混乱地互相泄露信息。</li>
@@ -133,7 +152,12 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 </ul>
 
 
+
+
 <p><strong>为透明性和可显性而编码</strong></p>
+
+
+
 
 <ul>
 <li>程序调用层次最大的静态深度不要超过四。</li>
@@ -147,7 +171,12 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 </ul>
 
 
+
+
 <p><strong>Unix文本文件格式的约定</strong></p>
+
+
+
 
 <ul>
 <li>如果可能，以新行符结束的每一行只存一个记录。</li>
@@ -161,7 +190,12 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 </ul>
 
 
+
+
 <p><strong>运行控制文件语法风格</strong></p>
+
+
+
 
 <ul>
 <li>支持说明性注释，并以“#”开始。</li>
@@ -172,10 +206,18 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 </ul>
 
 
+
+
 <p><strong>Unix接口设计模式</strong></p>
+
+
+
 
 <p>过滤器模式<br/>
 过滤器程序接收标准输入的数据，转换成某种格式后，再将结果发送到标准输出端，两个经典例子是tr和grep。附带原则:</p>
+
+
+
 
 <ul>
 <li>牢记Postel原则：宽进严出。</li>
@@ -184,27 +226,50 @@ Home</font></a> <a class="extra" href="/blog.html"><font size="6">blog</font></a
 </ul>
 
 
+
+
 <p>Cantrip模式<br/>
 cantrip接口模式是其中最简单的，没有输入，没有输出，只被调用一次，产生退出状态数值。一个cantrip程序的行为只能由启动条件来控制，更具备脚本能力。例如<em>clear</em>控制台清屏程序。</p>
+
+
+
 
 <p>源模式<br/>
 “源”是一种类似过滤器的程序，不需要输入;它的输出只能在启动条件中控制。例如ls、who、ps。</p>
 
+
+
+
 <p>接收器模式<br/>
 接收器是一种类似过滤器的程序，只接纳标准输入而不发送任何东西到标准输出。它对输入数据的作用行为只能在启动条件中控制。这种接口模式很少用到，例如lpr，Unix打印假脱机程序。</p>
+
+
+
 
 <p>编译器模式<br/>
 类似编译器的程序既无标准输出也无标准输入;然而它们会将错误信息发送到标准错误端。相反的，一个类似编译器的程序从命令行接受文件或资源名，以某种方式转换这种资源，然后再以改变后的名字输出。</p>
 
+
+
+
 <p>ed模式<br/>
 所有前述的模式都只有极低的交互能力;这些程序仅仅使用启动时传入的控制信息，并且同数据是分离的。然而许多程序，在启动后需要由用户持续的会话来驱动。最简单的交互设计模式以行编辑器ed程序作为代表。其他例子包括ftp、sh。</p>
+
+
+
 
 <p>Roguelike模式<br/>
 Roguelike程序是设计来运行在系统控制台、X终端模拟器或视频显示终端上的游戏，使用全屏幕、支持可视界面风格，但使用字符阵列显示，而非图形和鼠标界面,例如vi。</p>
 
+
+
+
 <p>“引擎和接口分离”模式
 Unix反对将程序编制成单个庞然大物般的单进程，将程序分解成几个相互通讯的进程常常可以降低整体复杂度。这种策略的应用方式通常是：将程序的“引擎”部分从“接口”部分分离，例如MVC。 <br/>
 模式变种：</p>
+
+
+
 
 <ul>
 <li>配置者/执行者组合</li>
@@ -214,29 +279,64 @@ Unix反对将程序编制成单个庞然大物般的单进程，将程序分解�
 </ul>
 
 
+
+
 <p>CLI服务器模式<br/>
 CLI服务器是经典的接口设计模式之一，这种程序以前端方式触发时，有一个简单的CLI界面读取标准输入而写入标准输出;以后台方式运行时，一旦程序检测到这种方式就将标准输入和标准输出连接到专门的TCP/IP服务端口。POP、IMAP、SMTP、HTTP服务器程序通常都遵循这种模式。</p>
+
+
+
 
 <p>基于语言的接口模式<br/>
 最有力的一种Unix设计模式，就是GUI前端同CLI微型语言后端的组合。这种类型的优秀设计实例相当复杂，但是比起只涵盖微型语言小部分功能，而使用大堆专门代码的做法，要简单灵活得多。例如几乎任何数据库套件都由一个或几个GUI前端和报表生成器构成;Linux下的GIMP开源图形编辑器，拥有一个类似Adobe Photoshop的GUI界面，可以用脚本语言编写绘图插件。</p>
 
+
+
+
 <p><strong>语言的选择</strong></p>
+
+
+
 
 <p>同C或C++相比，使用脚本语言的生产力可以提高一倍。使用脚本语言的性能损失对真实世界的程序来说经常微不足道，因为真实世界的程序往往受I/O事件等待、网络延迟以及缓存列填充等限制，而非CPU自身的效率。</p>
 
+
+
+
 <p>要求速度最快并且具有实时需求的程序，或者与OS内核紧密联系的程序非常适合用C编写。C语言最佳之处是资源效率和接近机器语言，而最糟糕的地方是其编程简直就是资源管理的炼狱。</p>
+
+
+
 
 <p>C++的最佳之处是编译效率以及面向对象和范型编程的结合，最糟糕之处是它非常怪异复杂，往往鼓励过分复杂的设计。如果现有的C++工具包或服务库为程序提供了强大有效的方法，或者现在的应用领域正是上述OO语言具有巨大优势的领域，可以考虑C++。</p>
 
+
+
+
 <p>shell的最佳之处在于书写小型脚本非常自然快捷，最糟糕之处在于大型shell脚本必须依靠大量辅助命令，而这些辅助命令不一定在所有目标机器上都表现一致甚至不一定存在。要在大型shell脚本中分析依赖关系并不容易。</p>
+
+
+
 
 <p>Perl的最佳之处是作为强力工具以供大量涉及正则表达式匹配的小型胶合脚本使用。最糟之处在于当程序很大时Perl会变得非常丑陋、刻板、几乎无法维护。</p>
 
+
+
+
 <p>Python的最佳之处在于它鼓励清晰、易读的代码，易学易用，又能够扩展到大型项目。最糟之处在于，不仅相对编译语言，而且相对与其他脚本语言，他也是效率低下、速度缓慢的。</p>
+
+
+
 
 <p>Java的最佳之处在于它非常接近“一次编写、到处运行”的目标，作为一个独立于操作系统的环境非常有用。最糟之处在于Java1/Java2的分裂令人沮丧地损害了这个目标的实现。</p>
 
+
+
+
 <p><strong>与开源开发者协同工作的最佳实践</strong></p>
+
+
+
 
 <ul>
 <li>良好的修补实践
@@ -284,11 +384,20 @@ CLI服务器是经典的接口设计模式之一，这种程序以前端方式�
 </ul>
 
 
+
+
 <p>数据比程序逻辑更易驾驭，无论数据是普通表格、说明性标记语言、模板系统还是一组可以扩展成程序逻辑的宏，这一点都成立。尽可能把设计的复杂度从程序代码转移到数据中是个好实践，选择便于人类维护和操作的数据表示法也是好实践。</p>
+
+
+
 
 <p>进行数据驱动编程时，需要把代码和代码作用的数据结构划分清楚，这样，在改变程序的逻辑时，就只要编辑数据结构而不是代码。尽可能少干活，让数据塑造代码，依靠工具，把机制从策略中分离。例如表格加代码的方式，比起设计差劲的手工修改HTML方式或过度设计的数据库方式来说，要简单的多。</p>
 
+
+
+
 <p>最少立异原则是所有接口设计中的通用原则。它的含义是：如有可能，尽量允许用户将接口功能委派给熟悉的程序来完成，例如，如果程序要求用户编辑大量的文本，应该调用一个文本编辑器而不是自己写一个内嵌编辑器。最小立异原则的目的是为了减少用户在使用接口时必须学习的复杂过程。</p>
+
 
 </div>
    <div id="disqus_thread"></div>
@@ -312,7 +421,11 @@ CLI服务器是经典的接口设计模式之一，这种程序以前端方式�
     
 
 	<div class="footer">
-<div class="rss">
+<div style="width:55em;height:3px;margin:0px auto;padding:0px;background-color:#D5D5D5;overflow:hidden;"></div>
+<div class=contact>
+<p>©2013 JengChen Tel:18520222024 </p>
+</div>
+<div class="share">
 <p>
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style ">
