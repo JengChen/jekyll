@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>JengChen's WebSite</title>
+    <link>http://chenfjm.github.io</link>
+    <description>RSS feed for JengChen's WebSite</description>
+    <pubDate>Thu, 05 Dec 2013 00:00:00 +0800</pubDate>
+    <item>
+      <title>protobuf语言指南</title>
+      <link>http://chenfjm.github.io/categories/%E5%B7%A5%E5%85%B7/protobuf</link>
+      <description>&lt;p&gt;&lt;strong&gt;定义消息类型&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Thu, 05 Dec 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E5%B7%A5%E5%85%B7/protobuf</guid>
+      <dc:date>2013-12-05T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>Unix编程艺术</title>
+      <link>http://chenfjm.github.io/categories/unix/unix</link>
+      <description>&lt;p&gt;&lt;strong&gt;Unix哲学基础&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Fri, 15 Nov 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/unix/unix</guid>
+      <dc:date>2013-11-15T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>libevent之bufferevent</title>
+      <link>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libeventbufferevent</link>
+      <description>&lt;p&gt;&lt;strong&gt;基本概念&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Wed, 09 Oct 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libeventbufferevent</guid>
+      <dc:date>2013-10-09T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>libevent工具集</title>
+      <link>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E5%B7%A5-%E5%85%B7-%E9%9B%86</link>
+      <description>&lt;p&gt;&lt;strong&gt;基本类型&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Fri, 27 Sep 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E5%B7%A5-%E5%85%B7-%E9%9B%86</guid>
+      <dc:date>2013-09-27T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>libevent事件循环</title>
+      <link>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E4%BA%8B-%E4%BB%B6-%E5%BE%AA-%E7%8E%AF</link>
+      <description>&lt;p&gt;libevent事件处理的中心部分——事件主循环，根据系统提供的事件多路分发机制执行事件循环，对已注册的就绪事件，调用注册事件的回调函数来处理事件。&lt;/p&gt;
+</description>
+      <pubDate>Mon, 23 Sep 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E4%BA%8B-%E4%BB%B6-%E5%BE%AA-%E7%8E%AF</guid>
+      <dc:date>2013-09-23T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>libevent事件处理框架－event_base</title>
+      <link>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E4%BA%8B-%E4%BB%B6-%E5%A4%84-%E7%90%86-%E6%A1%86-%E6%9E%B6---event_base</link>
+      <description>&lt;p&gt;&lt;strong&gt;event_base结构体&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Fri, 20 Sep 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E4%BA%8B-%E4%BB%B6-%E5%A4%84-%E7%90%86-%E6%A1%86-%E6%9E%B6---event_base</guid>
+      <dc:date>2013-09-20T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>libevent核心 - event</title>
+      <link>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E7%9A%84-%E6%A0%B8-%E5%BF%83---event</link>
+      <description>&lt;p&gt;&lt;strong&gt;event结构体&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Sun, 15 Sep 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E7%9A%84-%E6%A0%B8-%E5%BF%83---event</guid>
+      <dc:date>2013-09-15T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>libevent 初识</title>
+      <link>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E5%88%9D-%E8%AF%86</link>
+      <description>&lt;p&gt;&lt;strong&gt;Linux IO 模型&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Sun, 08 Sep 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E7%BD%91%E7%BB%9C/libevent-%E5%88%9D-%E8%AF%86</guid>
+      <dc:date>2013-09-08T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>Vim插件配置</title>
+      <link>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/vim</link>
+      <description>&lt;p&gt;&lt;strong&gt;插件安装&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Wed, 07 Aug 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/vim</guid>
+      <dc:date>2013-08-07T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>VS使用技巧</title>
+      <link>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/VS-%E4%BD%BF-%E7%94%A8-%E6%95%99-%E7%A8%8B</link>
+      <description>&lt;p&gt;很多人都在用VS编写代码，但是大多数人只是用它来写代码而已，殊不知它还有很多强大的功能。一旦你领略到
+它的强大之处，你将会发现写程序是件很快乐的事情。它有太多的使用技巧值得我们学习。&lt;/p&gt;
+
+&lt;p&gt;安装应该是最简单的，我想用过Windows的程序员应该都会吧。最主要的是配置开发环境，首先是配置全局，再配
+置局部。加载第三方库、头文件都是最基本的，这些在Tools-&gt;Option下配置。接下来是配置工程，在每个工程的
+属性里可以配置。就是一些工程目录、输入输出、调试链接之类的。以上这些应该是很基本的，也是我们必须掌
+握的。&lt;/p&gt;
+
+&lt;p&gt;首先看主题的配置，为什么要配置主题呢？主要是保护眼,不容易使眼睛产生疲劳。
+建议使用consoal + 雅黑，下载地址: &lt;a href=&quot;https://www.dropbox.com/s/zw21x0i5p62rrrq/Exported-2013-03-15.vssettings&quot;&gt;YaHei.Consolas&lt;/a&gt;然后放到系统的字体中,使用下面的主题自动默认加载进去。 &lt;br/&gt;
+主题下载链接：&lt;a href=&quot;https://www.dropbox.com/s/zw21x0i5p62rrrq/Exported-2013-03-15.vssettings&quot;&gt;Exported.vssettings&lt;/a&gt;
+配置主题在Tools-&gt;Import and Export settings中。&lt;/p&gt;
+
+&lt;p&gt;文本编辑器的熟练使用也是很重要的，在编辑代码中，经常需要插入代码，在上一行写代码，删除某一个单词，
+或者在后一行插入代码等操，作使用快捷键可以节省我们很多时间。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;功能                                快捷键&lt;/li&gt;
+&lt;li&gt;在前一行插入代码                  Ctrl+Enter&lt;/li&gt;
+&lt;li&gt;在下一行插入代码                  Ctrl+Shfit+Enter&lt;/li&gt;
+&lt;li&gt;选中单词                          Ctrl+W&lt;/li&gt;
+&lt;li&gt;删除前一个单词                     Ctrl+BackSpace&lt;/li&gt;
+&lt;li&gt;删除后一个单词                     Ctrl+delete&lt;/li&gt;
+&lt;li&gt;删除一行                          Ctrl+Shift+L&lt;/li&gt;
+&lt;li&gt;剪切一行                          Ctrl+L&lt;/li&gt;
+&lt;li&gt;把单词/选中部分改为大写             Ctrl+Shift+U&lt;/li&gt;
+&lt;li&gt;把单词/选中部分改为小写             Ctrl+U&lt;/li&gt;
+&lt;li&gt;撤销                                Ctrl+Z&lt;/li&gt;
+&lt;li&gt;恢复                                Ctrl+Y&lt;/li&gt;
+&lt;li&gt;添加代码注释                        Ctrl+K+C&lt;/li&gt;
+&lt;li&gt;取消代码注释                        Ctrl+K+U&lt;/li&gt;
+&lt;li&gt;向前定位                          Ctrl+&lt;/li&gt;
+&lt;li&gt;向后定位                          Ctrl+Shift+&lt;/li&gt;
+&lt;li&gt;通过键盘访问导航栏                   Ctrl+Tab&lt;/li&gt;
+&lt;li&gt;只在打开的窗口之间便利             Ctrl+F6&lt;/li&gt;
+&lt;li&gt;列出有多个文件的下拉条             Ctrl+Shift+DownArrow&lt;/li&gt;
+&lt;li&gt;打开Solution Explorer               Ctrl+Shift+L&lt;/li&gt;
+&lt;li&gt;打开Class View                      Ctrl+Shift+C&lt;/li&gt;
+&lt;li&gt;打开资源                          Ctrl+Shift+E&lt;/li&gt;
+&lt;li&gt;开启可见空白                        Ctrl+R+W&lt;/li&gt;
+&lt;li&gt;添加书签                          Ctrl+K+K&lt;/li&gt;
+&lt;li&gt;删除某处的标签                     Ctrl+K+K&lt;/li&gt;
+&lt;li&gt;删除所有的标签                     Ctrl+K+L&lt;/li&gt;
+&lt;li&gt;搜索单词                          Ctrl+F3&lt;/li&gt;
+&lt;li&gt;搜索上一个单词                     Ctrle+Shift+F3&lt;/li&gt;
+&lt;li&gt;渐进式搜索                           Ctrl+I&lt;/li&gt;
+&lt;li&gt;快速搜索                          Ctrl+D&lt;/li&gt;
+&lt;li&gt;全能搜索                          Ctrl+F&lt;/li&gt;
+&lt;li&gt;替换                                Ctrl+H&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;最重要的是VA的使用，VA是VS的一个插件,由一个公司专门开发的，如果说会用快捷键是我们前进一小步，那么掌
+握VA的使用技巧就是我们前进了一大步。由于我们已经配置过主题了，所以在VA中就配置使用当前主题，因为自
+己手动很难找到比较合适的。&lt;/p&gt;
+
+&lt;p&gt;VA里面智能提示应该算是最重要的，智能提示主要是通过配置脚本实现的。当有一个函数的参数很长，但是你记不
+住，这个时候VA的提示功能就派上用场了。当我们输入if它就会自动提示出if(){…}或者if(){…}else{}这样的代码，
+省去我们输入的麻烦了。&lt;/p&gt;
+
+&lt;p&gt;VA还有自动创建功能，这个功能在VA的Refactor中。在编辑区，点击右键我们选择CreateImplementation，它就会
+对函数的声明自动生成实现框架，我们只要往里面添加代码就行，这是自动创建。
+一般我们写完一个函数要手动去给它写注释，这个时候你就可以直接点击DocumentMethod就会默认在这个函数的上面写上注
+释，这就是函数注释功能。
+还有一个Refactor中的 Extra Method，功能，快速重构某段代码，使其某段代码生成一个函数首先选中某段代码，然后点
+击右键，就会出现这个功能。&lt;/p&gt;
+
+&lt;p&gt;VA还自动帮你分析了，你要使用说明参数，如果你觉得这个参数不合适，自行修正就是了。注意最左线那个箭头指向的
+Extract to Source 你不选中，默认把此函数的实现放在.h中，如果要想把函数的实现和声明分开，选中此功能。&lt;/p&gt;
+
+&lt;p&gt;虽然VA提供了很多模板，但是那些模板都是通用的，可能不满足我们的要求，其实我们可以完全搞一个，而且加上快
+捷键。VA的工程管理，主要讲的是，使用一些快捷键快速切换文件，查找Reference，快去切换某个类的.h和cpp文件，
+等功能，总之就是弥补VS目前提供的功能不足的地方。VA还有很多有用的功能只是我们还没有发现，当我们遇到不懂
+的可以去它的官网看看，它的帮助文档还是很详细的，我们上面说的那里都有。&lt;/p&gt;
+
+&lt;p&gt;磨刀不误砍柴工，只要我们把工具熟练掌握了，工作效率自然会提高的。一个程序员编程水平再高，但是他的工作效
+率低下也是不可取的。虽然以上这些功能都是在VS2008下试验的，但是举一反三，我们不难在VS2010或VS2012下照样
+使用这些功能。总之，我们应该熟练使用VS，达到一种写代码就像玩一样的境界。这样我们就会将敲代码看作是一件
+很快乐的事情。&lt;/p&gt;
+</description>
+      <pubDate>Wed, 15 May 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/VS-%E4%BD%BF-%E7%94%A8-%E6%95%99-%E7%A8%8B</guid>
+      <dc:date>2013-05-15T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>从面向过程到面向对象</title>
+      <link>http://chenfjm.github.io/categories/cpp/%E4%BB%8E-%E9%9D%A2-%E5%90%91-%E8%BF%87-%E7%A8%8B-%E5%88%B0-%E9%9D%A2-%E5%90%91-%E5%AF%B9-%E8%B1%A1</link>
+      <description>&lt;p&gt;要想有从面向过程到面向对象的转变，首先得搞懂什么是面向过程，什么是面向对象，为什么要从面向过程到面向对象这种转变。&lt;/p&gt;
+</description>
+      <pubDate>Mon, 08 Apr 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/cpp/%E4%BB%8E-%E9%9D%A2-%E5%90%91-%E8%BF%87-%E7%A8%8B-%E5%88%B0-%E9%9D%A2-%E5%90%91-%E5%AF%B9-%E8%B1%A1</guid>
+      <dc:date>2013-04-08T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>C++代码规范</title>
+      <link>http://chenfjm.github.io/categories/cpp/C-%2B-%2B-%E4%BB%A3-%E7%A0%81-%E8%A7%84-%E8%8C%83</link>
+      <description>&lt;p&gt;对代码规范的理解是每个人只要有自己的规范就行，代码是给自己看的，有多少个程序员就有多少种代码规范。而且一
+直认为编码规范没有什么用处，我坚信这是浪费大家的编编程时间、影响效率的东西，我是大错特错了。&lt;/p&gt;
+</description>
+      <pubDate>Mon, 11 Mar 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/cpp/C-%2B-%2B-%E4%BB%A3-%E7%A0%81-%E8%A7%84-%E8%8C%83</guid>
+      <dc:date>2013-03-11T00:00:00+08:00</dc:date>
+    </item>
+    <item>
+      <title>利用Jekyll搭建个人网站</title>
+      <link>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/how-to-create-website%26blog-with-jekyll</link>
+      <description>&lt;h2&gt;安装&lt;/h2&gt;
+
+&lt;p&gt;安装&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt; &lt;br/&gt;
+安装&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot;&gt;DevKit&lt;/a&gt; &lt;br/&gt;
+安装Jekyll：
+    $ gem install jekyll&lt;/p&gt;
+
+&lt;h2&gt;创建版本库&lt;/h2&gt;
+
+&lt;p&gt;登陆你的&lt;a href=&quot;http://github.com&quot;&gt;Github账户&lt;/a&gt;，创建一个新的版本库，命名为&lt;code&gt;USERNAME&lt;/code&gt;.github.com &lt;br/&gt;
+安装Jekyll-Bootstrap:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/plusjade/jekyll-bootstrap.git `USERNAME`.github.com
+$ cd `USERNAME`.github.com
+$ git remote set-url origin git@github.com:`USERNAME`/`USERNAME`.github.com.git
+$ git push origin master   
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你安装了Jekyll，你可以在本地预览你的Blog:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git clone https://github.com/plusjade/jekyll-bootstrap.git
+$ cd jekyll-bootstrap
+$ jekyll --server    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;在浏览器预览http://localhost:4000.&lt;/p&gt;
+
+&lt;h2&gt;创建第一篇博文&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ rake post title=&quot;posttitle&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;默认情况下rake命令会在你的_posts目录下创建一个名为[年-月-日-posttitle.md]的文件，名称中的空格会转换成“-”，时间为当前系统时间。&lt;/p&gt;
+
+&lt;h2&gt;创建第一个页面&lt;/h2&gt;
+
+&lt;p&gt;根目录下创建页面&lt;br/&gt;
+    $ rake page name=&quot;about.md&quot;
+自定义目录下创建页面  &lt;br/&gt;
+    $ rake page name=&quot;pages/about.md&quot;
+创建类似./pages/about/index.html目录结构的页面 &lt;br/&gt;
+    $ rake page name=&quot;pages/about&quot;&lt;/p&gt;
+
+&lt;h2&gt;发布&lt;/h2&gt;
+
+&lt;p&gt;完成一篇博文或者做一些修改之后可以用简单的git命令提交到远程的Github版本库。同时Github可以将md文件解析成html文件，通过    USERNAME.github.com就可以访问刚才提交的博文。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git add .
+$ git commit -m &quot;description&quot;
+$ git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;当然你还可以运用一些预置的主题，做一些自定义的配置，以及自己定义主题增加模板配置文件、增加Blog挂件、加入Google Analytics、Disqus等等&lt;/p&gt;
+</description>
+      <pubDate>Wed, 06 Feb 2013 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/how-to-create-website%26blog-with-jekyll</guid>
+      <dc:date>2013-02-06T00:00:00+08:00</dc:date>
+    </item>
+    <dc:date>2013-12-05T00:00:00+08:00</dc:date>
+  </channel>
+</rss>

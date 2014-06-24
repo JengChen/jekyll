@@ -32,10 +32,12 @@ body {
 
 	  a:hover {
 		  color: black;
+      	  text-decoration: underline;
 	  }
 
 	  a {
 		  color: #aaa;
+		  text-decoration: none;
 	  }
 
 	  table {
@@ -56,7 +58,6 @@ body {
 		  margin: 3em 8em 2em auto;
 		  text-align: justify;
 		  line-height: 1.5em;
-		  color: #333333;
 	  }
 
 	  .site p{
@@ -71,13 +72,13 @@ body {
 	  }
 
 	  .title {
-		  color: #a00;
+		  color: #aaa;
 		  font-weight: normal;
 		  margin-bottom: 3em;
 	  }
 
 	  .site .title a {
-		  color: #a00;
+		  color: #aaa;
 		  text-decoration: none;
 	  }
 
@@ -99,15 +100,6 @@ body {
 		  color: #aaa;
 	  }
 
-	  .site .social {
-		  display: inline;
-	  }
-
-	  .site .social .share {
-		  float: left;
-		  margin-right: 2px;
-	  }
-
 	  .site.footer {
 		  font-size: 80%;
 		  color: #666;
@@ -116,12 +108,21 @@ body {
 		  overflow: hidden;
 	  }
 
-	  .site.footer .rss {
+    .site .footer .contact {
+      float: left;
+      margin-right: 25em;
+    }
+
+      .site .footer .contact p {
+        color: #aaa;
+		font-size: 80%;
+      }
+
+	  .site.footer .share {
 		  float: right;
-		  margin-left: 4em;
 	  }
 
-	  .site.footer .rss img {
+	  .site.footer .share img {
 		  border: 0;
 	  }
 
@@ -201,6 +202,66 @@ body {
 	  #related h2 {
 		  margin-bottom: 1em;
 	  }
+
+	  /*****************************************************************************/
+	  /*
+	  /* lifestream
+	  /*
+	  /*****************************************************************************/
+
+    #lifestream {
+      border-radius: 7px;
+      color: #666666;
+      width: 55em;
+      font-size:11px;
+    }
+    #lifestream a {
+      text-decoration: none;
+    }
+
+    #lifestream a:hover {
+      color: black;
+      text-decoration: underline;
+    }
+    #lifestream ul {
+      padding: 10px;
+    }
+    #lifestream li {
+      padding: 5px 3px 5px 25px;
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+	#lifestream .lifestream-facebook_page a{
+		color: #0033ff;
+	}
+
+	#lifestream .lifestream-flickr a{
+		color: #ff00ff;
+	}
+
+	#lifestream .lifestream-github a{
+		color: #444444;
+	}
+
+	#lifestream .lifestream-googleplus a{
+		color: #ff0000;
+	}
+	#lifestream .lifestream-linkedin a{
+		color: #006699;
+	}
+	#lifestream .lifestream-twitter a{
+		color: #0099ff;
+	}
+	#lifestream .lifestream-youtube a{
+		color: #cc3333;
+	}
+
+	  /*****************************************************************************/
+	  /*
+	  /* bar
+	  /*
+	  /*****************************************************************************/
 
 	  .bar h4,.article-author-bottom h4{margin-bottom:0.5em;font-size:150%}
 	  .bar p,.article-author-bottom p{font-size:130%;font-style:italic;}
