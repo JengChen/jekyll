@@ -1,0 +1,81 @@
+<div id="lifestream">&nbsp;</div>
+<script>
+(function(){
+ list = [
+ {
+service: 'googleplus',
+user: '104464021526429289930',
+key: 'AIzaSyC1N3B48qr0isTO4EJQhilKIiS2RWglrGI'
+},
+{
+service: 'twitter',
+user: 'jengchen'
+},
+{
+service: 'facebook_page',
+user: '100003529174667'
+},
+{
+service: 'flickr',
+<!-- user: '92981161@N05'-->
+},
+{
+service: 'github',
+		 user: '',
+},
+{
+service: 'linkedin',
+		 user: '238816614'
+},
+{
+service: 'blogger',
+		 user: ''
+},
+{
+service: 'lastfm',
+		 user: ''
+},
+{
+service: 'reddit',
+		 user: 'JengChen'
+},
+{
+service: 'rss',
+		 user: ''
+},
+{
+service: 'stackoverflow',
+		 user: ''
+},
+{
+service: 'tumblr',
+		 user: ''
+},
+{
+service: 'vimeo',
+		 user: ''
+},
+{
+service: 'wikipedia',
+		 user: '',
+		 language: 'en'
+},
+{
+service: 'wordpress',
+		 user: ''
+},
+{
+service: 'youtube',
+		 user: 'chenfjm'
+},
+	];
+
+
+$("#lifestream").lifestream({
+limit: 100,
+list: list,
+feedloaded: function(){
+}
+});
+})();
+</script>

@@ -11,3 +11,7 @@ I am graduated from [Xi'An University of Technology](http://www.xaut.edu.cn),Com
 You can get my shared files on [DropBox](https://www.dropbox.com/sh/13r1hdutv4uqz45/9k8klaihuH).
 
 {% include flickr %}
+
+##Life Stream  
+
+{% include jquery-lifestream %}

@@ -22,8 +22,10 @@
 <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
 <link rel="stylesheet" href="/css/prettify.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/css/ionicons.css" >
+<link rel="stylesheet" href="/css/lifestream.css" >
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js" charset="utf-8"></script>
 <script type="text/javascript" src="/javascripts/jquery.github.js"></script>
 <script type="text/javascript" src="/javascripts/prettify.js"></script>
+<script src="/javascripts/jquery.lifestream.min.js"></script>
 </head>
