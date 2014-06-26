@@ -213,7 +213,7 @@ body {
     #lifestream {
       border-radius: 7px;
       color: #666666;
-      width: 50em;
+      width: 100%;
       font-size:11px;
     }
     #lifestream a {
