@@ -4,7 +4,7 @@
 {% if site.owner.email %}<p style="text-indent:0;margin-top:1.5em;"><a href="mailto:{{ site.owner.email }}" target="_blank"><i class="icon-email"></i></a></p>{% endif %}
 {% if site.owner.twitter %}<p style="text-indent:0;"><a href="http://twitter.com/{{ site.owner.twitter }}" target="_blank"><i class="icon-social-twitter"></i></a></p>{% endif %}
 {% if site.owner.facebook %}<p style="text-indent:0;"><a href="http://facebook.com/{{ site.owner.facebook }}" target="_blank"><i class="icon-social-facebook"></i></a></p>{% endif %}
-{% if site.owner.google_plus %}<p style="text-indent:0;"><a href="http://google.com//{{ site.owner.google_plus }}" target="_blank"><i class="icon-social-googleplus"></i></a></p>{% endif %}
+{% if site.owner.google_plus %}<p style="text-indent:0;"><a href="https://plus.google.com/u/0/104464021526429289930" target="_blank"><i class="icon-social-googleplus"></i></a></p>{% endif %}
 {% if site.owner.linkedin %}<p style="text-indent:0;"><a href="http://linkedin.com/in/{{ site.owner.linkedin }}" target="_blank"><i class="icon-social-linkedin"></i></a></p>{% endif %}
 {% if site.owner.instagram %}<p style="text-indent:0;"><a href="http://instagram.com/{{ site.owner.instagram }}" target="_blank"><i class="icon-social-instagram"></i></a></p>{% endif %}
 {% if site.owner.github %}<p style="text-indent:0;"><a href="http://github.com/{{ site.owner.github }}" target="_blank"><i class="icon-social-github"></i></a></p>{% endif %}
