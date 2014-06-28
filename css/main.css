@@ -62,8 +62,9 @@ body {
 		  min-height: 80%;
 	  }
 
-	  .site p{
+	  .site p,.site ul{
 		  margin:1em 0;
+		  color: #666;
 	  }
 
 	  .site a{
@@ -100,6 +101,10 @@ body {
 
 	  .site .meta {
 		  color: #aaa;
+	  }
+
+	  .site dd{
+	  	  color: #666;
 	  }
 
 	  .footer {
@@ -185,25 +190,6 @@ body {
 		  border: none;
 	  }
 
-	  /* terminal */
-	  #post pre.terminal {
-		  border: 1px solid black;
-		  background-color: #333;
-		  color: white;
-	  }
-
-	  #post pre.terminal code {
-		  background-color: #333;
-	  }
-
-	  #related {
-		  margin-top: 2em;
-	  }
-
-	  #related h2 {
-		  margin-bottom: 1em;
-	  }
-
 	  /*****************************************************************************/
 	  /*
 	  /* lifestream
@@ -265,7 +251,7 @@ body {
 	  /*****************************************************************************/
 
 	  .bar h4{margin-bottom:0.5em;font-size:150%}
-	  .bar p{font-size:130%;font-style:italic;}
+	  .bar p{font-size:130%;font-style:italic}
 	  .bar a,.bar a:hover{border-bottom:0 solid transparent;}
 	  .bar img.bio-photo{-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;}
 	  .bar{
