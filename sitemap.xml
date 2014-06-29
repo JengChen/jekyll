@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>/categories/linux/umllinux</loc>
+    <lastmod>2014-02-09</lastmod>
+
+  </url>
+  <url>
     <loc>/categories/%E5%B7%A5%E5%85%B7/protobuf</loc>
     <lastmod>2013-12-05</lastmod>
 
   </url>
   <url>
-    <loc>/categories/unix/unix</loc>
+    <loc>/categories/%E5%85%B6%E4%BB%96/unix</loc>
     <lastmod>2013-11-15</lastmod>
 
   </url>
