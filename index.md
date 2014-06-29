@@ -5,7 +5,7 @@ tagline:
 ---
 
 ##Welcome    
-This is the personal website and blog of [JengChen](about.html)
+This is the personal website and blog of [ChenCheng](about.html).
 On this site you will find links to my open source projects hosted on [GitHub](https://github.com/) as well as blog [posts](blog.html) describing my projects and research. Please +1 and Tweet about the projects and blog posts that you find useful or interesting.
 Over time, I will continue to add my future open source projects and blog about them. Thanks for visiting!
 

@@ -1,18 +1,18 @@
 markdown: rdiscount
 pygments: true
 
-title: JengChen's WebSite
+title: ChenCheng's WebSite
 url: http://chenfjm.github.io
 permalink: /categories/:categories/:title
 
 # Owner/author information
 owner:
-  name:           JengChen
+  name:           
   avatar:         me.jpg
 #  bio:
   email:          chenfjm@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter:          jengchen
+  twitter:          chenfjm
   facebook:         chenfjm
   github:           chenfjm
   linkedin:         chenfjm
