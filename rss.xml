@@ -12,7 +12,7 @@
     <item>
       <title>使用UML调试linux内核</title>
       <link>http://chenfjm.github.io/categories/linux/umllinux</link>
-      <description>
+      <description>&lt;p&gt;UML是User Mode Linux的缩写，从字面上也可以看出来，是在用户态运行linux内核。把linux当作普通应用程序就可以使用gdb等调试工具来分析内核了。UML的最大局限性就是不能调试硬件关联性强的代码，但是还有有很多方面可以应用的，比如调度算法、VFS、TCP/IP协议栈等。下面就介绍UML的环境搭建与使用方法。&lt;/p&gt;
 </description>
       <pubDate>Sun, 09 Feb 2014 00:00:00 +0800</pubDate>
       <guid>http://chenfjm.github.io/categories/linux/umllinux</guid>
