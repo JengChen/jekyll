@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/categories/linux/linux-socket-</loc>
+    <loc>/categories/linux/linux-socket-source</loc>
+    <lastmod>2014-03-15</lastmod>
+
+  </url>
+  <url>
+    <loc>/categories/linux/linux-socket-base</loc>
     <lastmod>2014-03-03</lastmod>
 
   </url>

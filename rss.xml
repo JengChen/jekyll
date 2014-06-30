@@ -8,14 +8,23 @@
     <title>JengChen's WebSite</title>
     <link>http://chenfjm.github.io</link>
     <description>RSS feed for JengChen's WebSite</description>
-    <pubDate>Mon, 03 Mar 2014 00:00:00 +0800</pubDate>
+    <pubDate>Sat, 15 Mar 2014 00:00:00 +0800</pubDate>
+    <item>
+      <title>从内核角度认识socket</title>
+      <link>http://chenfjm.github.io/categories/linux/linux-socket-source</link>
+      <description>&lt;p&gt;&lt;strong&gt;socket与文件系统&lt;/strong&gt;&lt;/p&gt;
+</description>
+      <pubDate>Sat, 15 Mar 2014 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/linux/linux-socket-source</guid>
+      <dc:date>2014-03-15T00:00:00+08:00</dc:date>
+    </item>
     <item>
       <title>linux socket 编程基础</title>
-      <link>http://chenfjm.github.io/categories/linux/linux-socket-</link>
+      <link>http://chenfjm.github.io/categories/linux/linux-socket-base</link>
       <description>&lt;p&gt;&lt;strong&gt;socket介绍&lt;/strong&gt;&lt;/p&gt;
 </description>
       <pubDate>Mon, 03 Mar 2014 00:00:00 +0800</pubDate>
-      <guid>http://chenfjm.github.io/categories/linux/linux-socket-</guid>
+      <guid>http://chenfjm.github.io/categories/linux/linux-socket-base</guid>
       <dc:date>2014-03-03T00:00:00+08:00</dc:date>
     </item>
     <item>
@@ -275,6 +284,6 @@ $ git push origin master
       <guid>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/how-to-create-website%26blog-with-jekyll</guid>
       <dc:date>2013-02-06T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2014-03-03T00:00:00+08:00</dc:date>
+    <dc:date>2014-03-15T00:00:00+08:00</dc:date>
   </channel>
 </rss>
