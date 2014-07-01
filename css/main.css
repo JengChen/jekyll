@@ -170,7 +170,7 @@ body {
 
 	  #post pre {
 		  border: 1px solid #ddd;
-		  background-color: #eef;
+		  background-color: #2e3436;
 		  padding: 0 .4em;
 	  }
 
@@ -181,7 +181,7 @@ body {
 
 	  #post code {
 		  border: 1px solid #ddd;
-		  background-color: #eef;
+		  background-color: #2e3436;
 		  font-size: 80%;
 		  padding: 0 .2em;
 	  }
