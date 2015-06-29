@@ -9,7 +9,9 @@ description: Jekyll是一个静态网站生成器，用ruby编写而成，结合
 安装[RubyInstaller](http://rubyinstaller.org/downloads/)   
 安装[DevKit](http://rubyinstaller.org/downloads/)   
 安装Jekyll：
-	$ gem install jekyll
+
+-	$ gem install jekyll   
+-	$ gem install rdiscount
 
 ##创建版本库
 
