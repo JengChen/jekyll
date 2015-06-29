@@ -8,7 +8,17 @@
     <title>JengChen's WebSite</title>
     <link>http://chenfjm.github.io</link>
     <description>RSS feed for JengChen's WebSite</description>
-    <pubDate>Thu, 21 Aug 2014 00:00:00 +0800</pubDate>
+    <pubDate>Sun, 21 Sep 2014 00:00:00 +0800</pubDate>
+    <item>
+      <title>Thrift总结</title>
+      <link>http://chenfjm.github.io/categories/web/thrift-%E6%80%BB-%E7%BB%93</link>
+      <description>&lt;p&gt;Thrift 是 Facebook
+实现的一种高效的、支持多种编程语言的远程服务调用的框架。它通过一个中间语言IDL（接口定义语言)来定义RPC的接口和数据类型，然后通过一个编译器生成不同语言的代码并由生成的代码负责RPC协议层和传输层的实现。&lt;/p&gt;
+</description>
+      <pubDate>Sun, 21 Sep 2014 00:00:00 +0800</pubDate>
+      <guid>http://chenfjm.github.io/categories/web/thrift-%E6%80%BB-%E7%BB%93</guid>
+      <dc:date>2014-09-21T00:00:00+08:00</dc:date>
+    </item>
     <item>
       <title>scribe安装笔记</title>
       <link>http://chenfjm.github.io/categories/web/scribe</link>
@@ -251,8 +261,13 @@ Extract to Source 你不选中，默认把此函数的实现放在.h中，如果
 
 &lt;p&gt;安装&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot;&gt;RubyInstaller&lt;/a&gt; &lt;br/&gt;
 安装&lt;a href=&quot;http://rubyinstaller.org/downloads/&quot;&gt;DevKit&lt;/a&gt; &lt;br/&gt;
-安装Jekyll：
-    $ gem install jekyll&lt;/p&gt;
+安装Jekyll：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;$ gem install jekyll&lt;/li&gt;
+&lt;li&gt;$ gem install rdiscount&lt;/li&gt;
+&lt;/ul&gt;
+
 
 &lt;h2&gt;创建版本库&lt;/h2&gt;
 
@@ -305,6 +320,6 @@ $ git push origin master
       <guid>http://chenfjm.github.io/categories/%E5%85%B6%E4%BB%96/how-to-create-website&amp;blog-with-jekyll</guid>
       <dc:date>2013-02-06T00:00:00+08:00</dc:date>
     </item>
-    <dc:date>2014-08-21T00:00:00+08:00</dc:date>
+    <dc:date>2014-09-21T00:00:00+08:00</dc:date>
   </channel>
 </rss>
